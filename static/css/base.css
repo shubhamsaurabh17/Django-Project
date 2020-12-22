@@ -1,0 +1,13 @@
+.one{text-align: center;
+color: #0066ff;
+font-weight: bold;}
+
+
+.jumbotron {
+  min-width: 585px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px 10px 10px;
+  border: 0.08em solid black;
+}

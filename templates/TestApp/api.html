@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends "TestApp/base.html"%}
+{%block title_block%}API{%endblock%}
+
+{%block content_block%}
+<h1 class="one">API</h1>
+  <div class="container">
+    <div class="jumbotron">
+<ul>
+      {% if user.is_authenticated%}
+      <li><a href="/retrieveapi/{{id}}/" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Retrieve API</a></li>
+      <li><a href="/token" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Obtain Token</a></li>
+      {%else%}
+        <li><a href="/createapi" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Create API</a></li>
+      {%endif%}
+</ul>
+</div>
+</div>
+{%endblock%}
